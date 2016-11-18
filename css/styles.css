@@ -1,0 +1,237 @@
+
+* {
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #ef4036;
+  padding: 50px;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+/*.image*/
+.images {
+  width: 45%;
+  float: left;
+}
+
+.display {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 500px;
+  height: 500px;
+  transition: opacity 0.8s;
+}
+
+.display-hidden {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.display-hidden img {
+  width: 450px;
+  height: 450px;
+}
+
+.options {
+  margin-top: 550px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: opacity 0.8s;
+}
+
+.options:hover {
+  opacity: 1;
+}
+
+.options:hover ~ .display {
+  opacity: 0;
+}
+
+.options:hover + .display-hidden {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+/*.description*/
+
+.description {
+  width: 55%;
+  float: right;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  margin-top: 50px;
+  line-height: 25px;
+}
+
+.welcome:first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ef4036;
+}
+
+.chart {
+  margin-top: 50px;
+}
+
+
+/*.description table*/
+
+table {
+  width: 97%;
+  border-collapse: collapse;
+  display: block;
+}
+
+table:after {
+  display: block;
+  content: "source: bulbapedia";
+}
+
+thead th:nth-child(n+2):nth-child(-n+6) {
+  background-color: #ef4036;
+  color: white;
+}
+
+tbody th {
+  background-color: #ef4036;
+  color: white;
+}
+
+tbody tr {
+  border-bottom: 2px solid #ccc;
+}
+
+th, td {
+  height: 50px;
+  width: 120px;
+  padding: 5px 10px 5px 10px;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.charmander:hover {
+  background-color: #ff8f3f;
+  color: white;
+}
+
+.charmander:hover th {
+  color: #ff8f3f;
+}
+
+.squirtle:hover {
+  background-color: #3adeff;
+  color: white;
+}
+
+.squirtle:hover th {
+  color: #3adeff;
+}
+
+.bulbasaur:hover {
+  background-color: #85C090;
+  color: white;
+}
+
+.bulbasaur:hover th{
+  color: #85C090;
+}
+
+.pikachu:hover {
+  background-color: #ffd622;
+  color: white;
+}
+
+.pikachu:hover th {
+  color: #ffd622;
+}
+
+.checkout h2 {
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+/*.checkout*/
+
+.checkout {
+  display: block;
+  clear: both;
+  background-color: #f58c86;
+  width: 99%;
+  position: relative;
+  left: 6.5px;
+  top: 45px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.input {
+  margin-top: 30px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  display: block;
+  border: 2px solid #ef4036;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.pokemon {
+  margin-top: 30px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background-color: #ef4036;
+  color: white;
+  font-weight: bold;
+}
+
+
+/*media query*/
+@media (max-width: 1250px) {
+  .images {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  .description {
+    width: 100%;
+    float: none;
+  }
+}
