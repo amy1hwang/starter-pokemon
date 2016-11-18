@@ -12,7 +12,7 @@ body {
 .wrapper {
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   overflow: auto;
   padding-bottom: 50px;
 }
@@ -180,11 +180,11 @@ th, td {
   display: block;
   clear: both;
   background-color: #f58c86;
-  width: 99%;
+  width: 100%;
   position: relative;
-  left: 6.5px;
-  top: 45px;
+  top: 50px;
   border-radius: 0 0 10px 10px;
+  border: 10px double white;
   height: 450px;
 }
 
@@ -222,10 +222,19 @@ button {
   display: inline-block;
   border: none;
   border-radius: 5px;
+  border: 5px double #f58c86;
   background-color: #ef4036;
   color: white;
   font-weight: bold;
+  box-shadow: 3px 3px 5px #b22e27;
 }
+
+button:hover {
+  background-color: white;
+  color: #ef4036;
+  box-shadow: 0 0 0;
+}
+
 
 footer {
   margin-top: 50px;
