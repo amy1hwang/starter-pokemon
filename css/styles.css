@@ -58,12 +58,14 @@ li:hover {
 .images {
   width: 45%;
   float: left;
+  position: relative;
 }
 
 .display {
   position: absolute;
-  top: 180px;
-  left: 100px;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
   width: 500px;
   height: 500px;
   transition: opacity 0.8s;
@@ -71,15 +73,17 @@ li:hover {
 
 .caption {
   position: absolute;
-  top: 135px;
-  left: 100px;
+  top: 70px;
+  left: 35%;
+  transform: translate(-50%, 0%);
   transition: opacity 0.8s;
 }
 
 .display-hidden {
   position: absolute;
-  top: 135px;
-  left: 120px;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, 0%);
   opacity: 0;
   transition: opacity 0.8s;
 }
@@ -279,7 +283,6 @@ button:hover {
   box-shadow: 0 0 0;
 }
 
-
 footer {
   margin-top: 50px;
   font-size: 12px;
@@ -292,17 +295,7 @@ footer {
     width: 100%;
     height: 100%;
     float: none;
-    margin-left: auto;
-    margin-right: auto;
     clear:left;
-    padding-top: 1px;
-  }
-
-  .display, .display-hidden{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -328,15 +321,12 @@ footer {
     margin-left: none;
     padding: none;
     text-align: justify;
-    /*width: 20%;*/
   }
 
   .display, .display-hidden{
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    width: 430px;
-    height: 430px;
+    top: 40px;
+    width: 400px;
+    height: 400px;
   }
 
   .caption {
@@ -352,8 +342,6 @@ footer {
     width: 80px;
     height: 80px;
     margin-top: 450px;
-    float: none;
-    display: inline-block;
   }
 }
 
@@ -367,9 +355,6 @@ footer {
   }
 
   .display, .display-hidden{
-    position: absolute;
-    left: 50%;
-    top: 45%;
     width: 400px;
     height: 400px;
   }
@@ -383,7 +368,7 @@ footer {
   .options {
     width: 50px;
     height: 50px;
-    margin-top: 420px;
+    margin-top: 450px;
     margin-left: 10%;
     float: none;
     display: inline-block;
