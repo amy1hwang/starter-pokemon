@@ -25,8 +25,8 @@ body {
 
 .display {
   position: absolute;
-  top: 70px;
-  left: 70px;
+  top: 100px;
+  left: 80px;
   width: 500px;
   height: 500px;
   transition: opacity 0.8s;
@@ -34,8 +34,8 @@ body {
 
 .display-hidden {
   position: absolute;
-  top: 50px;
-  left: 70px;
+  top: 80px;
+  left: 80px;
   opacity: 0;
   transition: opacity 0.8s;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .options {
-  margin-top: 550px;
+  margin-top: 600px;
   float: left;
   width: 100px;
   height: 100px;
@@ -75,6 +75,7 @@ body {
 .description {
   width: 55%;
   float: right;
+  padding: 20px;
 }
 
 h1 {
@@ -84,6 +85,7 @@ h1 {
 p {
   margin-top: 50px;
   line-height: 25px;
+  text-align: justify;
 }
 
 .welcome:first-letter {
@@ -94,13 +96,14 @@ p {
 
 .chart {
   margin-top: 50px;
+  font-weight: bold;
 }
 
 
 /*.description table*/
 
 table {
-  width: 97%;
+  width: 100%;
   border-collapse: collapse;
   display: block;
 }
@@ -168,10 +171,6 @@ th, td {
   color: #ffd622;
 }
 
-.checkout h2 {
-  padding-top: 30px;
-  text-align: center;
-}
 
 
 /*.checkout*/
@@ -184,8 +183,13 @@ th, td {
   position: relative;
   left: 6.5px;
   top: 45px;
-  border-radius: 10px;
-  height: 300px;
+  border-radius: 0 0 10px 10px;
+  height: 450px;
+}
+
+.text {
+  padding-top: 20px;
+  text-align: center;
 }
 
 .input {
@@ -222,6 +226,11 @@ button {
   font-weight: bold;
 }
 
+footer {
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center;
+}
 
 /*media query*/
 @media (max-width: 1250px) {
