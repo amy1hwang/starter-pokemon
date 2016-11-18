@@ -69,6 +69,13 @@ li:hover {
   transition: opacity 0.8s;
 }
 
+.caption {
+  position: absolute;
+  top: 135px;
+  left: 100px;
+  transition: opacity 0.8s;
+}
+
 .display-hidden {
   position: absolute;
   top: 135px;
@@ -97,7 +104,7 @@ li:hover {
   opacity: 1;
 }
 
-.options:hover ~ .display {
+.options:hover ~ .display, .options:hover ~ .caption {
   opacity: 0;
 }
 
@@ -330,6 +337,10 @@ footer {
     top: 40%;
     width: 430px;
     height: 430px;
+  }
+
+  .caption {
+    display: none;
   }
 
   .display-hidden img {
