@@ -1,5 +1,5 @@
 # Get Your Starter Pokemon
-## by Amy Hwang
+## by Amy Hwang | 11.18.2016
 
 # description of the webpage
 This webpage is for customers who need a starter pokemon to go on a journey with, or who simply wants a pokemon companion. The image gallery displays enlarge images of pokemon and a table chart is to help customers make better decisions of which pokemon to get. Once a customer has decided which pokemon to take, he/she may fill out the checkout form and submit the form by clicking "I CHOOSE YOU!" button.
